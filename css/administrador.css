@@ -1,0 +1,26 @@
+@CHARSET "UTF-8";
+
+.croppie-container {
+    padding: 0;
+}
+
+.croppie-container .cr-viewport {
+    border: none;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.form-group label {
+    cursor: pointer;
+}
+
+.form-group #international+label .nac, .form-group #international:checked+label .int {
+    display: block;
+}
+
+.form-group #international+label .int, .form-group #international:checked+label .nac {
+    display: none;
+}
+
+.form-group #important:checked + label {
+    background: #22c363;
+}

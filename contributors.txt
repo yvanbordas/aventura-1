@@ -1,0 +1,15 @@
+
+LUMOS
+
+# TEAM
+
+- Yvan Bordas           Team Leader - Web Developer
+- Hermann D. Schimpf    Programmer
+
+# TECHNOLOGY
+
+- HTML5
+- CSS3
+- jQuery
+- PHP
+- MySQL

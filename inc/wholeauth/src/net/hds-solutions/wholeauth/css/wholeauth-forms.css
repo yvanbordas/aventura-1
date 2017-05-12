@@ -1,0 +1,23 @@
+.attached-wrapper {
+    position: relative;
+    border: 1px dotted;
+    cursor: pointer;
+}
+
+.attached-wrapper>p {
+    position: relative;
+    height: 100%;
+    font-family: arial;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    line-height: 35px;
+}
+
+.attached-wrapper>span {
+    font-size: 20px;
+    margin-top: -10px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+}

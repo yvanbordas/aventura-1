@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # Modules rewrite
+    RewriteRule ^module/([^/]*)([^/]*)$ .?m=$1&$2 [L,QSA]
+
+    # SCREENS rewrite
+    RewriteRule ^sc/(css|js|images|fonts)/(.*)?$ $1/$2 [L]
+    RewriteRule ^sc-([^/]*)([^/]*)$ .?s=$1&$2 [L,QSA]
+	
+	# Admin section rewrite
+	#RewriteRule ^eventos/(css|js|images|fonts)/(.*)?$ http://eventos.comdetur.com.py/$1/$2 [L]
+	RewriteRule ^eventos/?$ http://eventos.comdetur.com.py/default.aspx [L]
+</IfModule>
